@@ -375,6 +375,14 @@ form .btn2{
   color: #ff004f;
 }
 
+.voltar p{
+  color: #fff;
+}
+
+.voltar p:hover{
+  color: #ff004f;
+}
+
 /*-- ----------Responsivo---------- --*/
 nav .fas{
   display: none;
