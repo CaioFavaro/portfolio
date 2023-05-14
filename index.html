@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caio Favaro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/666110ff49.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/LogoCaio.png" class="logo"> 
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#competências">Competências</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text"> 
+        <p>Programador</p>
+        <h1><span>Bem vindo, eu sou o </span><br> Caio!</h1>
+      </div>
+    </div>
+  </div>
+
+     <!-- ----------sobre---------- -->
+
+  <div id="sobre">
+    <div class="container">
+      <div class="row">
+        <div class="sobre-col-1">
+          <img src="images/caio2.jpeg">
+        </div>
+        <div class="sobre-col-2">
+          <h1 class="sub-title">Sobre Mim</h1>
+          <p>Sou o Caio, tenho 21 anaos, atualmente estou cursando Sistemas de informação na FIAP. 
+            Tenho  muita vontade de aprender e Desenvolever minhas habilidades. Tenho estudado desevolvendo projetos tanto
+          Back-end quanto Front-end, e tenho uma muito interrese em aplicativos mobile também.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Habilidades')">Habilidades</p>
+              <p class="tab-links" onclick="opentab('Educação')">Educação</p>
+            </div>
+            <div class="tab-contents active-tab" id="Habilidades">
+              <ul>
+                <li><span>Boa comunicação</span><br>Sou uma pessoas de fácil comunicação.</li>
+                <li><span>Trabalho em equipe</span><br>Tenho facilidade para trabalhar em grupo.</li>
+                <li><span>Proatividade</span><br>Sou proativo nas minhas ações.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Educação">
+              <ul>
+                <li><span>ETEC</span><br>Curso de informatica integrado ao ensino medio</li>
+                <li><span>2021-2022</span><br>4 semestres de Sistemas de informação no IFSP</li>
+                <li><span>2023-Atualmente</span><br>4 semestres de Sistemas de informação na FIAP</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- ----------competências---------- -->
+
+    <div id="competências">
+      <div class="container">
+        <h1 class="sub-title">Competências</h1>
+        <div class="lista-serviços">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Desenvolvimento Back-end</h2>
+            <p>Desenvolvendo o Back-end de aplicações, com Java e Alguns frameworks como Spring MVC e Hibernate.  </p>
+              <a href="https://github.com/CaioFavaro/Projeto-Java" target="_blank">Veja um projeto Java aqui</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-connectdevelop"></i>
+            <h2>Web Develper</h2>
+            <p>Desenvolvendo aplicações para web, como essa utilizando HTML5, CSS, BootStrap e JavaScript</p>
+              <a href="https://github.com/CaioFavaro/Desenvolvimento-Web-" target="_blank">Veja alguns projetos web aqui</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Developer</h2>
+            <p>Construindo aplicativos para Android, com Dart e utilizando o Framework Flutter</p>
+              <a href="https://github.com/CaioFavaro/Dart-Projects" target="_blank">Veja alguns aplicativos desenvolvidos aqui</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- ----------Projetos---------- -->
+
+      <div id="projetos">
+        <div class="container">
+          <h1 class="sub-title">Meus Projetos</h1>
+          <div class="lista-projetos">
+            <div class="portifolio">
+              <img src="images/user1.png">
+              <div class="layer">
+                  <h3>Tela de login</h3>
+                  <p>Tele de login inicial, com uma animação de um avião.</p><br>
+                  <a href="Login/login.html " target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="portifolio">
+              <img src="images/locadora1.jpg">
+              <div class="layer">
+                <h3>Locadora de Filmes</h3>
+                <p>Sistema de locação de filmes.</p><br>
+                <a href="LocadoraMVC-main/locadora-mvc/src/main/resources/templates/home.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+            </div>
+            <div class="portifolio">
+              <img src="images/dinherio1.png">
+              <div class="layer">
+                <h3>Aplicativo de finanças</h3>
+                <p>Aplicativo ainda em produção.</p><br>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+            </div>
+          </div>
+          <a href="https://github.com/CaioFavaro?tab=repositories" target="_blank" class="btn">Veja Mais</a>
+        </div>
+      </div>
+
+      <!-- ----------Contato---------- -->
+
+      <div id="contato">
+        <div class="container">
+          <div class="row">
+            <div class="contato-left">
+              <h1 class="sub-title">Contato</h1>
+             <p> <i class="fa-solid fa-envelope"></i>caiofavaro27@gmail.com</p>
+             <p> <i class="fa-solid fa-phone-square-alt"></i>+55 (11)94686-4992</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/caiofavaro/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/CaioFavaro" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <a href="images/meu curriculo.pdf" download class="btn btn2">Baixe meu CV</a>
+            </div>
+            <div class="contato-right">
+              <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="text" name="Name" placeholder="Digite seu nome" required autocomplete="off">
+                <input type="email" name="Email" placeholder="Digite seu email" required autocomplete="off">
+                <textarea name="Message" rows="6" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit" class="btn btn2">Enviar</button>
+
+                <input type="hidden" name="accessKey" value="6cd30a0d-3d20-40ef-b53f-82bee0f70aa9">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="copyright"> 
+          <p>Caio Favaro <i class="fas fa-heart"></i></p>
+        </div>
+
+      </div>
+
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+
+  
+
+</body>
+</html>
